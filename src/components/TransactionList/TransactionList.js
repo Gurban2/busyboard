@@ -13,7 +13,7 @@ const TransactionList = () => {
   const [selectedYear, setSelectedYear] = useState("2025");
   const [success, setSuccess] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 10;
+  const itemsPerPage = 8;
 
   useEffect(() => {
     setBanks(transactionsData);
@@ -131,7 +131,7 @@ const TransactionList = () => {
           >
             1
           </button>
-        
+
           <button
             onClick={() =>
               setCurrentPage((prev) => Math.min(prev + 1, totalPages))

@@ -13,7 +13,6 @@
     margin-top: 20px;
     background-color: $bg;
 
-
     th {
       background-color: white;
       color: $gray;
@@ -76,29 +75,28 @@
     display: flex;
     align-items: center;
   }
-}
-.pagination {
-  display: flex;
-  justify-content: left;
-  gap: 10px;
-  margin-top: 20px;
+  .pagination {
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+    margin-top: 20px;
 
-  button {
-    padding: 8px 12px;
-    border: none;
-    background: #007bff;
-    color: white;
-    cursor: pointer;
-    border-radius: 4px;
+    button {
+      padding: 8px 12px;
+      border: none;
+      background: #007bff;
+      color: white;
+      cursor: pointer;
+      border-radius: 4px;
 
-    &:disabled {
-      background: #ccc;
-      cursor: not-allowed;
+      &:disabled {
+        background: #ccc;
+        cursor: not-allowed;
+      }
+    }
+
+    span {
+      font-weight: bold;
     }
   }
-
-  span {
-    font-weight: bold;
-  }
 }
-
