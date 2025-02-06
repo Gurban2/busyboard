@@ -1,0 +1,104 @@
+@import "../../styles.scss";
+.bank-container {
+  padding: 20px;
+  font-family: Inter;
+  background-color: white;
+  border: 0.5px solid #f6f7fb;
+  border-radius: 8px;
+  filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.1));
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: $bg;
+
+
+    th {
+      background-color: white;
+      color: $gray;
+      font-weight: 400;
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+
+    td {
+      text-align: left;
+      font-family: $font-family;
+      font-size: 12px;
+      background-color: white;
+      color: $dark;
+      padding: 0 12px;
+    }
+
+    .dropdown-header {
+      background-color: $bluelight;
+      color: $dark;
+      font-size: 14px;
+      letter-spacing: 0.2px;
+      font-weight: 400;
+      height: 40px;
+      width: 300px;
+    }
+    tr {
+      text-align: left;
+      height: 60px;
+      border-bottom: 1px solid $graylight;
+    }
+
+    button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: #ff5722;
+      font-size: 16px;
+      transition: color 0.3s;
+
+      &:hover {
+        color: #d45c1d;
+      }
+    }
+
+    td:nth-child(1),
+    td:nth-child(2),
+    td:nth-child(3),
+    td:nth-child(4) {
+      width: 150px;
+    }
+
+    td:nth-child(n + 5) {
+      width: 300px;
+    }
+  }
+
+  .category-select-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+}
+.pagination {
+  display: flex;
+  justify-content: left;
+  gap: 10px;
+  margin-top: 20px;
+
+  button {
+    padding: 8px 12px;
+    border: none;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+
+    &:disabled {
+      background: #ccc;
+      cursor: not-allowed;
+    }
+  }
+
+  span {
+    font-weight: bold;
+  }
+}
+

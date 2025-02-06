@@ -1,0 +1,29 @@
+.popup {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #fff;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1000;
+  
+    &.success {
+      border-left: 5px solid green;
+      color: green;
+    }
+  
+    &.error {
+      border-left: 5px solid red;
+      color: red;
+    }
+  
+    &.show {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  

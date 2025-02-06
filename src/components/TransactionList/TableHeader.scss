@@ -1,0 +1,122 @@
+@import "../../styles.scss";
+
+.bank-header {
+  display: flex;
+  font-family: $font-family;
+  justify-content: space-between;
+  // padding: 20px;
+
+  .left-buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    select {
+      width: 150px;
+      background-color: $main-blue;
+      color: white;
+      padding: 13px 20px;
+      font-size: 14px;
+      border-radius: 5px;
+      border: 0;
+      cursor: pointer;
+
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: $graylight;
+        color: $dark;
+      }
+
+      &:focus {
+        outline: none; // Remove focus outline if desired
+        background-color: $graylight;
+        color: $dark;
+      }
+      &:active {
+        background-color: $main-blue;
+      }
+
+      option {
+        background-color: $main-blue;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        &:hover {
+          background-color: $bluelight;
+          color: $dark;
+        }
+      }
+    }
+
+    .left-buttons-inner {
+      display: flex;
+      gap: 10px;
+      background-color: $graylight;
+      border-radius: 5px;
+      padding: 2px;
+
+      button {
+        padding: 12px 18px;
+        font-size: 14px;
+        border-radius: 5px;
+        border: 0px;
+        background: none;
+        color: $gray;
+
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          color: $dark;
+          background-color: #fff;
+        }
+      }
+    }
+    .left-buttons-inner :nth-child(1) {
+      background-color: white;
+      color: $dark;
+    }
+  }
+
+  .right-buttons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+
+    button {
+      padding: 10px 20px;
+      font-size: 14px;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+
+    .btn-upload {
+      background-color: $bluelight;
+      color: $main-blue;
+      &:hover {
+        background-color: $main-blue;
+        color: white;
+      }
+    }
+
+    .btn-rules {
+      background-color: $bluelight;
+      color: $main-blue;
+
+      &:hover {
+        background-color: $main-blue;
+        color: white;
+      }
+    }
+  }
+}

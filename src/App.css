@@ -1,0 +1,23 @@
+.App {
+  background-color: #f6f7fb;
+  height: 100vh;
+}
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  padding: 20px;
+  /* gap: 40px; */
+}
+
+.App-header {
+  font-size: 24px;
+  font-weight: 600;
+  color: black;
+  /* margin-bottom: 30px; */
+}
+h1 {
+  padding: 0 20px;
+  margin-bottom: 30px;
+}

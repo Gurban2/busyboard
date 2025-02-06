@@ -1,0 +1,108 @@
+@import "../../styles.scss";
+
+.modal-overlay {
+  position: absolute;
+  inset: 0;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background-color: $white;
+  padding: 40px;
+  border-radius: 10px;
+  width: 870px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-family: $font-family;
+
+  h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: $dark;
+  }
+
+  input,
+  select {
+    padding: 13px 20px;
+    margin-top: 8px;
+    width: 100%;
+    border: 1px solid $bg;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: white;
+
+    &:focus {
+      border-color: $main-blue;
+      outline: none;
+    }
+  }
+
+  .totalWrapper {
+    display: flex;
+    justify-content: space-between;
+    label,
+    h4 {
+      font-size: 14px;
+      color: $dark;
+      font-weight: 500;
+    }
+    div {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .transactionDetails {
+    display: grid;
+    font-size: 14px;
+
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: left;
+    margin-top: 20px;
+    gap: 20px;
+  }
+
+  button {
+    background-color: $main-blue;
+    color: $white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+
+    &:disabled {
+      background-color: $graylight;
+      cursor: not-allowed;
+    }
+
+    &:hover:not(:disabled) {
+      background-color: $blue-hover;
+    }
+  }
+
+  .popup-message {
+    margin-top: 20px;
+    font-size: 14px;
+    color: $green;
+
+    &.error {
+      color: $red;
+    }
+  }
+}
